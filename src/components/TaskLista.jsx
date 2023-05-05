@@ -26,10 +26,10 @@ const onClickRemoveItem = e => {
 
   return (
     <div className='td_lista'>
-      {lista.length ? check : "No tenes ninguna tarea"}
+      {lista.length ? check : "🚨 No tenés ninguna tarea 🚨"}
       {lista.length ? (
         <p>
-          <button className='btn_delete' onClick={onClickRemoveItem}> Eliminar todas las tareas chequeadas</button>
+          <button className='btn_delete' onClick={onClickRemoveItem}> Eliminar las tareas chequeadas</button>
         </p>
       ) : null}
     </div>

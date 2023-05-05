@@ -24,11 +24,12 @@ const FormToDo = props => {
     <form onSubmit={handleSubmit}>
       <div className='td_list'>
         <h1>To Do App</h1>
+        <h3>-Para cuando tenés déficit de B12-</h3>
         <div className='td_input'>
           <input 
           className='text'
           type="text" 
-          placeholder='que tareas queres agregar?' 
+          placeholder='Probá agregando una tarea acá' 
           value={descripcion} 
           onChange={e => setDescripcion(e.target.value)} 
           />

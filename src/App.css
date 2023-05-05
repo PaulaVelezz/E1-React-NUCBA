@@ -1,7 +1,11 @@
+@import url('https://fonts.googleapis.com/css2?family=Bruno+Ace+SC&display=swap');
+
 html {
-  background: #ccc;  
   height: 100%;
   display: flex;
+  background: #1a2a6c;
+  background: -webkit-linear-gradient(to right, #fdbb2d, #b21f1f, #1a2a6c);
+  background: linear-gradient(to right, #fdbb2d, #b21f1f, #1a2a6c);
 }
 
 body {
@@ -14,22 +18,40 @@ body {
 
 .App {
   text-align: center;
+  border-radius: 10px;
+  background: rgba(21, 25, 28, 0.72);
+  box-shadow: 0 8px 20px 0 rgba(14, 17, 61, 0.37);
+  backdrop-filter: blur( 6.5px );
+  -webkit-backdrop-filter: blur( 6.5px );
+  padding: 10px;
 }
 
 .td_list{
   width: 450px;
-  padding: 8px 16px;
+  padding: 10px 16px;
 }
 
 .td_list h1{
-  color: black;
+  color: #f6f6f6;
+  font-family: 'Bruno Ace SC';
+  font-size: 2.2em;
+  letter-spacing: 1px;
+}
+
+.td_list h3{
+  color: #070707;
+  font-size: 1.1em;
+  letter-spacing: 1px;
 }
 
 .btn_input{
-  background-color: green;
+  background-color: #80d04e;
+  border: none;
   outline: none;
-  padding: 6px;
+  padding: 7px;
   font-size: 15px;
+  font-weight: bold;
+  letter-spacing: 1px;
   border-radius: 5px;
   color: white;
   margin-left: 10px;
@@ -37,7 +59,13 @@ body {
 }
 
 .btn_delete{
-  border: solid 1px red;
+  border: none;
+  padding: 8px;
+  font-size: 1em;
+  font-weight: bold;
+  border-radius: 5px;
+  color: whitesmoke;
+  background-color: #c52222;
 }
 
 .td_input{
@@ -48,13 +76,28 @@ body {
 .td_input > .text {
   outline: none;
   padding: 0px 10px;
-  font-size: 16px;
-  width: 230px;
+  font-size: 1em;
+  width: 240px;
   height: 46px;
-  border:none;
+  border: none;
 }
 
-.texto_tarea {
-  color: black;
+.nuevo_item{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  text-align: center;
+  justify-content: space-evenly;
 }
 
+.texto_tarea{
+  color: whitesmoke;
+  font-size: 1.1em;
+  letter-spacing: 1px;
+}
+
+.td_lista{
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-weight: 500;
+  color: #070707;
+}

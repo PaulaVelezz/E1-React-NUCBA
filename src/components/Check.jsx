@@ -1,7 +1,7 @@
 import React, {Fragment} from 'react'
 
 const Check = props => {
-  const { onChange, data: { id, description, done } 
+  const { onChange, data: { id, descripcion, done } 
     } = props;
 
   return (
@@ -15,7 +15,7 @@ const Check = props => {
         onChange={onChange} 
         />
         
-        <div className='texto_tarea'> {description} </div>
+        <div className='texto_tarea'> {descripcion} </div>
       </label>
     </Fragment>
   )
